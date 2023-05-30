@@ -25,6 +25,13 @@ describe('Unit Test /app1', () => {
     });
   });
 
+  describe('Unit Test /ayman', () => {
+    it('should respond with "Hello ayman!"', async () => {
+      const response = await request(app).get('/ayman');
+      expect(response.status).toBe(200);
+    });
+  });
+
 describe('Integration Test Connect Database', () => {
   let connection;
 
